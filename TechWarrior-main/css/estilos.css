@@ -1,0 +1,479 @@
+body{
+    margin: 0 auto;
+    padding: 0 auto;
+    display: block;
+    --background-color:rgb(21, 32, 43);
+}
+
+body,section{
+    background-color: rgb(21, 32, 43);
+
+}
+
+.header-container{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.header-container i, .header-container svg{
+    color: white;
+    fill: white;
+}
+
+.header-container form{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header-input{
+    padding: 7px;
+    color: black;
+    border-radius: 14px;
+    width: 20em;
+    outline: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.icons-container{
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.carrito-container{
+    position: relative;
+    width: 30px;
+}
+
+.carrito-items{
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrito-items span{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.header-logo{
+    width: 120px;
+    height: auto;
+}
+
+.nav-container{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.nav-container ul{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2em;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.nav-container a{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Estilos del menu del perfil */
+
+.opciones-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+}
+.opciones-menu a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 5px 0;
+}
+.opciones-menu a:hover {
+    background-color: #ddd;
+}
+
+.slider-container{
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.slider-content{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.product-section{
+    height: 38rem;
+    padding-left: 4em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.product-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.product-section h2{
+    font-size: 34px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    padding-bottom: .5em;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+
+.product-section-description{
+    margin-bottom: 4em;
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.product-card{
+    width: 200px;
+    height: 300px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: opacity 0.5s ease-in-out;
+}
+
+.product-card img{
+    width: 100%;
+    height: 47%;
+}
+
+.product-details{
+    padding-top: 10px;
+}
+
+.product-details h3{
+    font-size: 18px;
+    margin: 0 0 8px;
+}
+
+.product-details p{
+    font-size: 14px;
+    color: #555;
+    margin: 0 0 16px;
+}
+
+.product-price{
+    font-size: 16px;
+    color: #888;
+    margin: 0 0 16px;
+}
+
+.product-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-btn button{
+    width: 100%;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.slogan-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 25rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-image: url("/img/banner1.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slogan-container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.slogan-container p{
+    position: relative;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-weight: 500;
+    color: white;
+    z-index: 1;
+}
+
+.slogan-container p:nth-child(1){
+    font-size: 35px;
+
+}
+
+.category-section{
+    height: 30rem;
+}
+
+.category-container{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 4em;
+}
+
+.category-card{
+    position: relative;
+    width: 300px;
+    height: 340px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgb(255,69,182);
+    background: linear-gradient(164deg, rgba(255,69,182,1) 15%, rgba(202,93,128,1) 54%, rgba(45,116,221,1) 89%);
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+}
+
+.category-card::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 0;
+}
+
+.category-card:hover{
+    box-shadow: 0px 0px 24px 5px rgba(255,255,255,0.75);
+}
+
+.category-image{
+    position: relative;
+    z-index: 1;
+    transition: all .5s ease-in-out;
+    width: -webkit-fill-available;
+}
+
+.category-image:hover{
+    scale: 1.1;
+}
+
+.category-title{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    z-index: 1;
+}
+
+.category-title h4{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.contact-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    padding: 2em;
+    background-color: var(--background-color);
+}
+
+.contact-text-container p{
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: white;
+}
+
+.contact-section{
+    height: 34rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-form-container{
+    background-color: white;
+    padding: 2em;
+    height: 465px;
+    border-radius: 15px;
+}
+
+
+/*ESTILOS DE EL FORM*/
+
+.form-wrapper {
+    width: 26rem;
+    margin: 0 auto;
+}
+
+.form-wrapper h3{
+    margin-bottom: 1em;
+}
+.input-group {
+    position: relative;
+    margin-bottom: 1rem;
+}
+.input-field,
+.textarea-field {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    outline: none;
+    font-size: 1rem;
+    background-color: #fff;
+    transition: border-color 0.3s;
+}
+.input-field:focus,
+.textarea-field:focus {
+    border-color: #007bff;
+}
+.input-label{
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem;
+    font-size: 1rem;
+    color: #495057;
+    pointer-events: none;
+    transition: all 0.3s;
+}
+.input-field:focus + .input-label,
+.input-field:not(:placeholder-shown) + .input-label,
+.textarea-field:focus + .input-label,
+.textarea-field:not(:placeholder-shown) + .input-label {
+    top: -0.75rem;
+    left: 0.75rem;
+    font-size: 0.75rem;
+    color: #007bff;
+    background-color: #fff;
+    padding: 0 0.25rem;
+}
+.checkbox-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.checkbox-input {
+    margin-right: 0.5rem;
+}
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+.contact-data{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 2em;
+}
+
+.contact-data span{
+    font-weight: bold;
+    text-align: start;
+    font-size: 20px;
+    color: white;
+}
+
+.contact-data p{
+    text-align: start;
+    font-size: 18px;
+    margin-bottom: 2em;
+    color: white;
+}
+
+.contact-redes{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-redes svg{
+    fill: white;
+}
+
+.disable{
+    display: none;
+}
+
+.hidden{
+    transition: opacity 5s ease-in-out;
+    display: none;
+}
